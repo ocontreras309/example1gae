@@ -18,26 +18,26 @@
                 <form action="poststudent" method="POST" class="form">
                     <div class="form-group">
                         <label for="txtFirstName">First name:</label>
-                        <input type="text" class="form-control" name="first_name" />
+                        <input type="text" class="form-control" name="first_name" required />
                     </div>
                     <div class="form-group">
                         <label for="txtLastName">Last name:</label>
-                        <input type="text" class="form-control" name="last_name" />
+                        <input type="text" class="form-control" name="last_name" required />
                     </div>
                     <div class="form-group">
                         <label for="txtCity">City:</label>
-                        <input type="text" class="form-control" name="city" />
+                        <input type="text" class="form-control" name="city" required />
                     </div>
                     <div class="form-group">
                         <label for="txtSemester">Semester:</label>
-                        <input type="number" class="form-control" name="semester" />
+                        <input type="number" class="form-control" name="semester" required min="1" max="10" />
                     </div>
                     <div class="form-group">
                         <label for="txtSemester">Birth Date:</label>
-                        <input type="date" class="form-control" name="birth_date" />
+                        <input type="date" class="form-control" name="birth_date" required />
                     </div>
                     <div>
-                        <input type="submit" value="Send" class="btn btn-primary" />
+                        <button type="submit" class="btn btn-primary">Send</button>
                         <a href="/" class="btn btn-primary">Back</a>
                     </div>
                 </form>
